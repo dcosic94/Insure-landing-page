@@ -1,0 +1,49 @@
+:root {
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*Ovaj komad koda skriva sadržaj samo za one koji ne koriste screen reader*/
+.u-visuallyHidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 62.5%; /*Veličina fonta jednka 10px*/
+}
+
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
