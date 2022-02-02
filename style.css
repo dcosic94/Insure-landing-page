@@ -69,8 +69,43 @@ header {
         justify-content: space-between;
     }
 
-    header nav ul {
+    .main-navigation {
         display: none;
+        position: absolute;
+        opacity: 0;
+        top: 5rem;
+        left:0;
+        background-color: var(--very-dark-violet);
+        width: 100vw;
+        height: 89vh;
+        z-index:100;
+        background-image: url('assets/bg-pattern-mobile-nav.svg');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+
+    }
+
+    .main-navigation.visible {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+    header nav li {
+        margin-top: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    header nav a {
+        color: #fff;
+    }
+
+    header nav .plans {
+        border: 2px solid #fff;
+        padding: 1rem 6rem;
     }
 
 .container {
@@ -325,7 +360,7 @@ footer {
     .hero div {
         padding-bottom: 0;
         position: relative;
-         top: -10rem;
+        top: -10rem;
     }
 
     .hero div::before {
@@ -351,7 +386,6 @@ footer {
 
     svg.intro-left {
         position: inherit;
-        left: -6.5rem;
         top: 37rem;
     }
 
