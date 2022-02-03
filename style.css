@@ -76,7 +76,7 @@ header {
         left:0;
         background-color: var(--very-dark-violet);
         width: 100vw;
-        height: 80vh;
+        height: calc(100vh - 8rem);
         z-index:100;
         background-image: url('assets/bg-pattern-mobile-nav.svg');
         background-repeat: no-repeat;
