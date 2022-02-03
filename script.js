@@ -7,5 +7,5 @@ const open = () => {
     navigation.classList.toggle('visible');
 };
 
-document.addEventListener("click", open);
+hamburger.addEventListener("click", open);
 
