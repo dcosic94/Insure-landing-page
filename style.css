@@ -105,7 +105,7 @@ header {
 
     header nav .plans {
         border: 2px solid #fff;
-        padding: 1rem 6rem;
+        padding: 1rem 5rem;
     }
 
 .container {
@@ -257,7 +257,7 @@ footer {
     background-repeat: no-repeat;
     background-color: var(--very-light-gray);
     display: flex;
-    padding: 3rem 0 5rem 0;
+    padding: 3rem 0 10rem 0;
     align-items: center;
     text-align:center;
 }
@@ -312,6 +312,7 @@ footer {
     }
 
 
+
 @media (min-width: 40em) {
     
     .on-desktop {
@@ -335,24 +336,30 @@ footer {
         margin: 0.5rem auto;
     }
 
-    header nav ul {
+    .main-navigation {
+        all:revert;
         display: flex;
         list-style: none;
-        text-transform: uppercase;
+    }
+
+    header nav a {
+        padding-right: 3rem;
+        color: #837D88;
+    }
+
+    header nav li {
+        margin: 0;
         font-size: 1rem;
         font-weight: 700;
     }
 
-    header nav a {
-        padding: 1rem;
-        color: #837D88;
+    header nav .plans {
+        color: #2C2830;
+        font-weight: 700;
+        border: 2px solid #2C2830;
+        padding: 0.7rem 2rem;
     }
 
-    .plans {
-        color: #2C2830;
-        border: 2px solid #2C2830;
-        padding: 0.7rem 1.5rem;
-    }
     .hero {
         position: relative;
     }
@@ -474,6 +481,7 @@ footer {
 
     .work button {
         margin: 0 5rem 0 0;
+        z-index: 10;
     }
 
     footer {
@@ -507,5 +515,24 @@ footer {
         align-items: center;
     }
 
+    .plans:hover {
+        background-color: #000;
+        color: #fff;
+        transition: .5s ease-out;
+    }
+
+    a:hover {
+        color: #2C2830;
+    }
+
+    .social-links path:hover {
+        fill: #2C2830;
+        transition: .3s ease-out;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline; 
+        text-decoration-color: #2D2641;
+    }
 
 }
